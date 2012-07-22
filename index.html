@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Ivo Nascimento - blog</title>
 	<meta name="author" content="Ivo Nascimento">
-	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/" rel="alternate" title="Ivo Nascimento - blog" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
@@ -19,15 +19,15 @@
 	<header class="the-header">
 		<div class="unit-head">
 			<div class="unit-inner unit-head-inner">
-				<p class="logo"><a href="/">Ivo Nascimento</a></p>
 				<nav class="nav-global">
 					<ul>
+						<li class="logo"><a href="/">Ivo Nascimento</a></li>
 						<li class="archive"><a href="/archive.html">archive</a></li>
 						<li class="page"><a href="/pages.html">pages</a></li>
 						<li class="category"><a href="/categories.html">categories</a></li>
 						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="forkme"><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
-								allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></li>
+						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->
@@ -89,7 +89,7 @@
 /*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
 (function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
 </script>
-
+  
   
 </body>
 </html>
