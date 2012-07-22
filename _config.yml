@@ -9,8 +9,8 @@ source: .
 destination: ./_site
 plugins:     ./_plugins
 future: true
-lsi:false
-markdown: maruku
+lsi:   false
+markdown:    maruku
 permalink: date
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
