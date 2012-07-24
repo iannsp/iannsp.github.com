@@ -1,0 +1,11 @@
+---
+layout: page
+title: "About"
+description: "About this Blog"
+---
+{% include JB/setup %}
+
+This blog is my personal space to talk about any(ANY) thing I realize is important to me.
+So, expect see here things about techlogy, but about poetry, philosophy, Photography and thoughts I have no sense, but I do.
+
+
