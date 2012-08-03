@@ -1,0 +1,24 @@
+php5minutes 7 - O C do MVC - Controller
+=======================================
+Published: 2010-04-04 14:58:32
+
+[![](http://ianntech.com.br/wp-content/uploads/2010/04/mvc-
+300x240.png)](http://ianntech.com.br/wp-content/uploads/2010/04/mvc.png)Nesse
+podcast de No 7 o assunto é o controller do MVC. O controlador do MVC é a
+parte desse padrão de desenvolvimento que é responsável pelo processamento das
+requisições realizadas pelo cliente, ou seja, o usuario do sistema. Como já
+foi falado de Model e View, esse também é a conclusão da série sobre MVC, e
+por causa disso, ele contém alguns prós e contras de se programar utilizando
+esse conceito. O que temos então, nesse php5minutes sobre controller, pode ser
+visto em resumo, na lista aqui ó, na sequencia em que ocorrem/precisam ser
+entendidos os itens: url's amigaveis.  bootstrap. carrega o front controller.
+resolve de rota da requisição. requisita o controller que vai atender a
+requisição. executa a ação/ processa a requisição. Define os dados para a
+view. Define a view que será utilizada. renderiza a view no dispositivo que
+requisitou a ação(Se for uma view do banco e tiver saldo, faz o cliente feliz.
+Se for do facebook e tiver mais algum convite do mafia wars, o cara fica
+triste). [podcast]http://ianntech.com.br/wp-content/plugins/download-
+monitor/download.php?id=24[/podcast] Link para download em Zip do [php5minutes
+7 - O C do MVC - Controller ](http://ianntech.com.br/wp-content/plugins
+/download-monitor/download.php?id=25)
+

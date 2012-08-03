@@ -1,0 +1,244 @@
+Artigo sobre Sobrecarga de Operadores em php
+============================================
+Published: 2008-12-09 19:10:26
+
+Talvez não seja um assunto ao qual a maioria dos programadores php esteja
+acostumado, mas com certeza é uma feature que aqueles que programam em outras
+linguagens além de php gostariam de ver adicionada a este. A sobrecarga de
+operadores consiste em permitir que sejam especificados algorítmos para ao
+menos os operadores aritméticos, mas que em sua totalidade, deveria cobrir
+todos os operadores. Se não ficou claro, e talvez não tenha ficado, imagine o
+seguinte:
+
+Com relações aos números, com certeza você já efetuou somas, subtrações,
+multiplicações e divisões e..., e achou isso útil, com certeza, mas será que
+em algum momento você desejou somar [grandezas não
+escalares](http://pt.wikipedia.org/wiki/Escalar)?! Somar, por exemplo todos os
+[Value Objects(VO)](http://en.wikipedia.org/wiki/Data_Transfer_Object) de
+produto para requerer o valor total de uma compra aplicar o Objeto ISS sobre
+uma nota fiscal para obter o valor a ser pago com a operação. Essas operações
+que descrevi envolvem objetos e, para serem realizadas, necessitam ter código
+consciente das propriedades e métodos que são responsáveis por guardar e
+dispor essas informações, de forma que seria necessário:
+
+    
+    	// código 0.
+    	$ISS = new ISS("SP");
+    	$Mercadoria = new Mercadororia(Array("cod"=> 104515));
+    	$ValorImpostoISS = $ISS->getValue()*$Mercadoria->getValue();
+
+Quando na realidade seu desejo, seria poder fazer essa operação assim:
+
+    
+    	// código 1.
+    	$ISS = new ISS("SP");
+    	$Mercadoria = new Mercadororia(Array("cod"=> 104515));
+    	$ValorImpostoISS = $ISS*$Mercadoria;
+
+Concorda? Se você concorda, pode continuar seguinte a leitura desse artigo,
+por que acho que ele vai te ajudar a poder fazer isso, senão, acho melhor você
+continuar também por que depois de saber como funciona provavelmente você fará
+parte do time de interessados, logo, temos que: Time1 ∪ Time2 ∈ Time
+Interessados ;) Voltando da viagem([sic](http://pt.wikipedia.org/wiki/Sic)),
+vou começar a falar de sobrecarga por um tipo não escalar do php que permite a
+sobrecarga e que talvez você ainda não tenha percebido. O array, que
+representar um conjunto de valores, unidimensional(vetor) ou com duas ou mais
+dimensões(array), e essa discrepância de terminologia no php já me deixa
+chateado, afinal, vetor é vetor e array é array, suporta a operação de adição,
+mas não soma os itens. O que ocorre é uma união entre os array que participam
+da soma, mas já é um operador escalar trabalhando num valor não escalar,
+concorda, logo:
+
+    
+    //código 2
+    $a = Array("a1"=>1,"a2"=>2,"a3"=>3);
+    $b = Array("b1"=>1);
+    var_dump($a+$b);
+    /*
+    array
+      'a1' => int 1
+      'a2' => int 2
+      'a3' => int 3
+      'b1' => int 1
+
+*/
+
+Acima, a operação de soma com o array, foi apresentada para ilustrar que um
+operador no qual você esta acostumado a confiar para executar uma ação, pode,
+dependendo do contexto, realizar uma operação diferente, como nesse caso, ao
+invés de somar os itens(ação esperada), executou um union. No outro exemplo
+abaixo, veja o comportamento que resultou.
+
+    
+    class produto{// objeto que representa produtos de uma loja...
+     private $preco=0;
+     private $label=0;
+     function __construct($p,$l){
+      $this->preco = $p;
+      $this->label = $l;
+     }
+    }
+    
+    $a1 = new produto(10,"Produto 1");
+    $a2 = new produto(15, "Produto 2");
+    var_dump($a1);
+    var_dump($a2);
+    var_dump($a1+$a2);
+    /*
+    object(produto)[1]
+      private 'preco' => int 10
+      private 'label' => string 'Produto 1' (length=9)
+    
+    object(produto)[2]
+      private 'preco' => int 15
+      private 'label' => string 'Produto 2' (length=9)
+    
+    int 2
+    
+    */
+
+Isso não é nenhum sonho de funcionalidade, afinal, o resultado indicar que o
+operador de adição realizou um count no número de itens, ao invés de me dar o
+preço dos produtos somados, afinal, se eu somar os produtos, eu vou querer
+somar os preços e não os nomes/labels dos mesmo, correto? Pois bem, mas essa é
+uma das poucas vezes em que um operador no php tem um comportamento "não
+esperado". Essa introdução tinha por intuito mostrar que um operador
+sobrecarregado pode fazer algo totalmente diferente do que ele normalmente
+faria, como usar o operador de deslocamento de bit à direita para apagar um
+caractere numa string e isso poderia ser implementado, mas não faz muito
+sentido. Sentido faz quando ele permite que a operação seja executada como
+deve, mas dentro de um contexto diferente. No php, não é permitido
+sobrecarregar operador e isso é sabido de todos, mas Sara Goleman criou uma
+extensão chamada operator(sugestivo não) que esta disponível no pecl que
+permite fazer exatamente isso, e assim adiciona uma funcionalidade muito boa à
+esta linguagem que todos adoramos. A operator esta na versão 0.0.3 e não
+recebe updates desde 2008, mas fiz testes com ela(que serão apresentados a
+seguir) que me deixaram feliz e confiante de que ela poderia ser utilizada em
+produção. A operator consiste numa série de funções mágicas/especiais(lembra,
+aquelas que tem dois under score no inicio do nome) para as quais o
+programador pode escrever o algorítmo que bem entender e os operadores que a
+extensão consegue sobrecarregar, segundo a página do pacote são os +, -, *, /,
+%, <<, >>, ., |, &, ^, ~, !, ++, --, +=, -=, *=, /=, %=, <<=, >>=, .=, |=, &=,
+^=, ~=, ==, !=, ===, !==, <, and <= e também para os operadores lógicos > e >=
+se for aplicado um patch [procurar este patch]. A extensão em si tem 164 k
+quando compilada e consistem em um shared object, ou seja, nada de segredos e
+vamos então à instalação. Na minha máquina eu estou trabalhando com o snapshot
+da 5.3.0. Usando pecl a coisa fica simples.
+
+    
+    		pecl install operator
+
+, mas se você é daqueles que gosta de fazer as coisas na mão, a instalação
+seria dividida em mais passos. 1o - Fazer download do tar.gz da versão 0.3 da
+extensão em http://pecl.php.net/package/operator ou usar wget
+http://pecl.php.net/get/operator-0.3.tgz. 2o - Escolher um lugar para colocar
+o pacote(eu ainda uso o /opt) e descompactar com tar -xvf operator-0.3.tgz. 3o
+- Entre no diretório operator-0.3. 4o - digite os comandos phpize & make &
+make install Se tudo correr bem(e imagino que vá correr, pois testei e não deu
+bug) você já terá instalado a extensão e para ter certeza, que tal digitar
+
+    
+    		php -i | grep operator
+
+Se aparacer o descritivo da extensão, ok, ela foi instalada com sucesso. No
+objeto que for ser criado não há necessidade de extender ou implementar nada.
+O importante são as funções mágicas especiais para sobrecarga, que começaremos
+a ver agora.
+
+    
+            function __add($val) ;// sobrecarrega do operador +
+            function __sub($val) ;// sobrecarrega do operador -
+            function __mul($val) ;// sobrecarrega do operador *
+            function __div($val) ;// sobrecarrega do operador /
+            function __mod($val) ;// sobrecarrega do operador %
+            function __sl($val) ;// sobrecarrega do operador << (deslocamento de bit a esquerda)         function __sr($val) ;// sobrecarrega do operador >> (deslocamento de bit a direita)
+            function __concat($val);// sobrecarrega do operador .
+            function __bw_or($val) ;// sobrecarrega do operador | (ou)
+    	function __bw_and($val) ;// sobrecarrega do operador & (and)
+            function __bw_xor($val) ;// sobrecarrega do operador ^ (xor - ou exclusivo)
+
+O primeiro exemplo é o de um Value Object representando um Item de Compra. Ele
+tem quatro propriedades que sao Nome do item, valor do produto, taxa de juros
+e taxa de desconto.
+
+    
+            class ItemCompra{
+    		private $Nome="";
+                    private $txJuros=0;
+                    private $txDescto=0;
+                    private $valor=0;
+             function __construct ($nome,$txJ, $txD, $v){
+    		$this->nome = $nome;
+                    $this->valor = $v;
+                    $this->txJuros = $txJ;
+                    $this->txDescto = $txD;
+             }
+             function __add($val) {
+                    return $this->valor+$val;
+             }
+    
+            }
+    	// codigo de exemplo
+    	 $item1 = new ItemCompra("Item numero 1", 0.5, 0.3, 99.99);
+    	 echo $item1+10;//imprime 109.99
+
+Vamos adicionar as outras operações básicas:
+
+    
+            class ItemCompra{
+    		private $Nome="";
+                    private $txJuros=0;
+                    private $txDescto=0;
+                    private $valor=0;
+             function __construct ($nome,$txJ, $txD, $v){
+    		$this->nome = $nome;
+                    $this->valor = $v;
+                    $this->txJuros = $txJ;
+                    $this->txDescto = $txD;
+             }
+             function __add($val) {
+                    return $this->valor+$val;
+             }
+            function __sub($val) { return $this->valor - $val;}
+            function __mul($val) { return $this->valor * $val;}
+            function __div($val) { return $this->valor / $val;}
+    
+            }
+    	// codigo de exemplo
+    	 $item1 = new ItemCompra("Item numero 1", 0.5, 0.3, 99.99);
+    	 echo $item1+10;//imprime 109.99
+    	 echo $item1*2; // imprime 199,98
+    	 echo $item1-0.99; // imprime 99;
+    	 echo $item1 / 2; //imprime 49,995;
+
+E assim por diante, seguindo cada uma das operações abaixo(deslocadores de bit
+e decisão binária...
+
+    
+            function __sl($val) ;// sobrecarrega do operador << (deslocamento de bit a esquerda)         function __sr($val) ;// sobrecarrega do operador >> (deslocamento de bit a direita)
+            function __concat($val);// sobrecarrega do operador .
+            function __bw_or($val) ;// sobrecarrega do operador | (ou)
+    	function __bw_and($val) ;// sobrecarrega do operador & (and)
+            function __bw_xor($val) ;// sobrecarrega do operador ^ (xor - ou exclusivo)
+
+Tudo bonito até agora, mas vamos aos problemas. O que ocorre é que a extensão
+operator tem muitos problemas ainda e apesar de ter usado a maioria das formas
+de contato com a Sara Golemon, ainda não consegui uma resposta por parte dela
+com relação se ela vai continuar a desenvolver esta extensão, que esta parada
+na 0.3(como já comentei anteriormente). Mas tudo isso aqui vale como prova de
+conceito e mostra que no momento em que pudermos trabalhar sobre os objetos
+com calculos, sobrecarregando essas operações para que façam aquilo que
+desejarmos o php terá mais um ponto a seu favor. A Zend esta correndo atrás
+dessas funcionalidades com spl_Int, spl_float e outros, mas por enquanto,
+ainda não saiu do forno e com certeza, quando sair, vou fazer um post sobre o
+assunto por aqui. Para quem ficou com vontade de testar o operator, instala
+por ai sem risco, portanto que você não use para produzir, e, se mesmo assim
+você desejar usar em produção(o que não recomendo) ai vai dois problemas que
+vão dificultar seu trabalho: A sobrecarga somente funciona se o objeto estiver
+à esquerda do operador. O método de concat não funciona pois o php não o vê e
+acaba lançando a exceção de que uma instancia não pode ser convertida para
+string. Teste somente de php 5.2.6 para baixo, no 5.3 alpha algumas macros em
+C foram retiradas e já vai dar problemas na compilação. Enfim, eu gostaria
+muito de ver esta extensão sendo continuada, mas acho que não vai acontencer.
+Grande Abraço.
+

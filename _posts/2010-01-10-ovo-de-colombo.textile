@@ -1,0 +1,138 @@
+Ovo de colombo
+==============
+Published: 2010-01-10 17:26:52
+
+Toda vez que escrevemos um software, colocamos nele um quantidade tal de
+conhecimento que, sem que ao menos nos percebamos, ele passa a participar da
+categoria de filho(s) que nunca tivemos.
+
+Algo como um ser especial que tem uma parte de nós sem que para isso tenhamos
+que pagar pensão.(nao ria, isso pode acontecer com você).
+
+Cada um desses software que desenvolvemos ao longo de nossa vida profissional
+são realmente filhos, e como tal devem ser tratados. E ai daqueles que
+desqualificarem nosso filhos, correto?
+
+**Nao... nada mais incorreto.**
+
+Nada melhor no mundo fora da matrix(ou diria dentro dela) que uma professora
+chata que nos indique que nosso filho tem problema de aprendizado. Ou que
+venha nos dizer que ele consegue conceber como um erro vai aparecer, mas nao
+consegue cobrir todos os casos de acerto.
+
+O caso geral do que estou querendo apresentar é o seguinte: Você cria algo que
+acha que é uma maravilha, desafia alguns pontos que outras pessoas achavam que
+eram barreiras e, claro, comete erros nesse trajeto, mas enfim, você atingiu
+seu objetivo, de superar algum ponto do desafio?!
+
+Para que você programador(a) trabalha? Para superar seus próprios limites cada
+dia mais, ou para realizar estritamente aquilo que lhe é pedido pelo seus
+superiores?
+
+Se você pensa em você e acha que a economia mundial nao esta mais para aquelas
+pessoas que pretendem ter uma carreira em um empresa apenas e que tudo esta
+migrando para uma economia onde você é contratado por job... provavelmente
+você realiza seus trabalhos aplicando tudo que conhece(senão nao seria
+contratado para) mas também procura aplicar ali alguma marca pessoal de
+desafio. Algo gerado pela pergunta:"Se for feito dessa forma, isso ficaria
+melhor?"
+
+**Ok, você pertence ao primeiro time que só faz estritamente o que te pedem, entao você pode PARAR DE LER POR AQUI. Tchau.!!!!!!**
+
+Se você pertence a outra parte, entao preste atenção nesse conceito:
+
+O conceito de ovo de Colombo...([http://pt.wikipedia.org/wiki/Ovo_de_Colombo](
+http://pt.wikipedia.org/wiki/Ovo_de_Colombo)).
+
+Cada vez mais estou convicto de que os administradores passam a olhar o
+cérebro daqueles que desenvolvem sistemas como um commodity. Pior que isso,
+eles nao vêem que pode ser que o produto final seja um commodity, mas que a
+forma de faze-lo, nunca, de forma alguma, poderá ser avaliada como um
+commodity.
+
+A forma de fazer algo somente é simples depois que alguém o fez, assim como
+colocar um ovo em pé ficou simples no momento em que Colombo o fez. Me diga,
+meu caro amigo que chegou a esse ponto da leitura. Qual valor você da a todos
+aqueles momento em que você deixou de curtir uma festa trivial, para curtir
+uma festa regada a letras verdes impressas num fundo preto.?!
+
+**Commodity??? O caralho !!!!**
+
+** **
+
+Eu estou aqui para achar soluções para problemas de computação que possam ter
+estado em mãos de outros, mas que nas mãos desses ou não acharam solução ou
+simplesmente essas soluções foram achadas mas sao proprietárias. E assim, eles
+"esqueceram" de me dizer como solucionar o problema de uma forma mais simples
+do que gastar uma parte da minha vida lendo documentação e outra parte
+testando casos com relação a aqueles problema.
+
+Cada dia que você acorda e que vai para o trabalho saiba que um novo desafio
+te espera lá e que, para espanto daqueles que gerenciam o seu trabalho, esse
+desafio nao é cumprir aquela tarefa que ele lhe pede, em especifico, mas sim,
+SUPERAR A SI MESMO.
+
+Cada dia, cada minuto, cada segundo... devem ser gastos com você mesmo. Essa é
+a melhor forma de recompensar a empresa em que você trabalha pelo salário que
+te pagam.
+
+Os desafios do mundo da computação crescem de uma forma impressionante com
+relação ao resto do mundo - ou melhor - a computação é um reflexo do resto do
+mundo. Mate todos os programadores, analistas e assemelhados e todos voltarão
+a trocar pedaços de metal como moeda ao invés de usar um pedaço de plástico
+como forma de pagamento.
+
+Seu desafio, repito, é ser melhor cada dia. Nem que para isso você tenha que
+em certo momento da sua carreira, voltar  a se tornar o pior. Recomeçar. Re-
+start the machine.
+
+A estabilidade que conhecer uma tecnologia traz nao é mais a mesma de quando
+se aprendia cobol. Você aprende cobol hoje... termina o curso e amanhã, surge
+o COBOL 2.0 e você se F*DE# por que achou que aquilo era o suficiente para
+viver o resto da sua vida, alias, se você é desse tipo de profissional que
+aprendeu algo e parou no tempo, se negando a continuar a aprender, eu quero
+mais é que....
+
+Nada mais nesse mundo é estável. Seu emprego é passageiro. Seu plano de
+saúde?Passageiro. Seu plano de descontos na faculdade? Passageiro. Sua
+faculdade? passageira. Seu plano funeral? Nada mais passageiro que isso. VOCE
+é PASSAGEIRO. EU SOU PASSAGEIRO. TUDO é PASSAGEIRO.
+
+Raros são os lugares em que você encontrará paz, tranquilidade, se você souber
+algo e simplesmente decidir que aquilo é o suficiente para viver o resto da
+vida e eu desejo que você não encontre esse tipo de lugar.... Por que?
+
+Por que você recebeu um cérebro que deve ser usado.
+
+Essa porcaria de pedaço de osso em que cabem quase um quilo de massa cinzenta
+nao serve só para separar as orelhas ou sustentar um chapéu. Serve para
+aprender, sempre mais e mais. Cada vez mais te tornando mais ignorante, 'mais
+burro'(já viu algum processo que te deixe 'mais burro' que aprender?).
+
+Se alguém vier pedir para você fazer seu trabalho e nao se preocupar com os
+pormenores, ignore essa pessoa. Aprenda. E saia correndo se necessário. Mas
+não se deixe tornar uma tostadeira ambulante. Um ser humano mecanizado que
+reflete a opinião de outros.
+
+O conceito de ovo de Colombo entra aqui mais que nunca.
+
+Você estuda a documentação e acha uma maneira de encontrar a solução para algo
+de forma que alguém não o fez, ao menos perto de você e aí resolve que esta na
+hora de apresentar resultado.
+
+Prepara uma apresentação, toma seu tempo olhando para o problema como um
+problema importante, mas no final ouve que a sua solução é trivial. Que o
+problema poderia ser resolvido por qualquer outra pessoa se alguém houvesse
+dito para uma outra pessoa faze-lo. Isso significa duas coisas:
+
+**Primeiro**, que sua solução é a melhor, afinal, ela é tão simples que a pessoa que lhe falou isso foi capaz de entender.
+
+**Segundo**, que você achou o padrão. Enfim, uma solução.
+
+Se ouvir de alguém que essa sua solução é simples. Pegue um ovo e exatamente
+como colombo. Estoure esse ovo na cabeça dessa pessoa, com palavras.
+
+Depois que você jogar o ovo na cabeça de quem falou você ainda poderá dizer:"
+Viram? Agora que eu fiz é simples... e todos vocês tem a capacidade de fazer o
+mesmo."
+

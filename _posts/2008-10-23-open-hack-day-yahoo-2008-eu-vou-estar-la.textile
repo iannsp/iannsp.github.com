@@ -1,0 +1,16 @@
+Open Hack Day Yahoo! 2008  - Eu Vou estar Lá
+============================================
+Published: 2008-10-23 18:59:51
+
+O Open Hack Day 2008 é um evento da Yahoo que proporcionará 24 horas de
+hacking da plataforma Yahoo e premiará os melhores projetos criados nas
+seguintes categorias(segundo material promocial da Yahoo!):
+
+  * **BOSS** - Plataforma aberta de web services da yahoo! Search para voce construir produtos de busca com base na indexação do Yahoo!
+  * **SearchMonkey** - Nova plataforma aberta da Yahoo! Search, para você usar dados estruturados, conhecidos como micro formatos, e tornar os resultados do Yahoo! Search do jeito que você quiser.
+  * **Yahoo! BluePrint Mobile** - Plataforma de criação de widgets para celulares com suporte a múltiplos dispositivos e sistemas operacionais.
+  * **Categoria Livre** - Use a imaginação e crie um projeto inovador usando os recursos de todas as plataformas do Yahoo!
+Esse evento é inédito no Brasil e suas versões anteriores ocorreram na sede da
+Yahoo! em Sunnyvale, Londres, Bangalore e Taiwan. O site de inscrições é o
+[hackday.org](http://hackday.org).
+

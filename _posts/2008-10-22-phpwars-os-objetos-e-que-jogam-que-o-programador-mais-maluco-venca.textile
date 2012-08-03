@@ -1,0 +1,13 @@
+phpwars - Os objetos e que jogam. Que o programador mais maluco venca!!!
+========================================================================
+Published: 2008-10-22 19:17:55
+
+Participam Ivo Nascimento e Augusto Hagiro(Elfo) phpwars e um jogo escrito em
+php basicamente para ser utilizado com ilustracao de conceitos de orientacao a
+objeto e utilizacao de spl. A ideia eh que os jogadores tenham que escrever
+classes que sigam o padrao estabelecido por uma interface e que facam upload
+dessas classes, que passaram por validadores e depois poderam ser usadas para
+jogar. Quem joga sao as classes, que devem ser criadas com inteligencia o
+suficiente para sobreviver em um tabulerio contra outra classe. Quem conseguir
+dominar o tabuleiro vence e ganha pontos.
+

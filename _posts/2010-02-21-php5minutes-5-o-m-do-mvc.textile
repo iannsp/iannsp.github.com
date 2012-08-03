@@ -1,0 +1,19 @@
+php5minutes 5 - O M do MVC
+==========================
+Published: 2010-02-21 19:07:57
+
+Para sarar do carnaval, nada melhor do php 5 minutes especial MVC. [caption
+id="attachment_322" align="alignnone" width="300" caption="Coincidencia ou
+não. O Ivan Rosolen estava levantando a plaquinha certa."][![Coincidencia ou
+não. O cara tava levantando a plaquinha certa.](http://ianntech.com.br/wp-
+content/uploads/2010/02/DSC_0268-300x198.jpg)](http://ianntech.com.br/wp-
+content/uploads/2010/02/DSC_0268.jpg)[/caption] Nesse podcast vou falar do
+Model. Na sequencia, quarta-feira, sai o de V, de view e sexta-feira lanço o
+C, de controller. Aqui vai o link para o site do criador do MVC - [Trygve M.
+H. Reenskaug](http://heim.ifi.uio.no/~trygver/). Também o link na
+[wikipedia](http://pt.wikipedia.org/wiki/MVC).
+[podcast]http://ianntech.com.br/wp-content/uploads/2010/02/php5minutes-5-O-M
+-do-MVC.mp3[/podcast] Não teve como escapar então tem referencia a outros
+design patterns:Value Object, Active Record. [download](http://ianntech.com.br
+/wp-content/plugins/download-monitor/download.php?id=21) Abraços a todos.
+

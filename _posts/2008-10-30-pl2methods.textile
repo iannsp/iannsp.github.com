@@ -1,0 +1,50 @@
+pl2method - Acesso transparente a Stored procedures do PG via métodos php de mesmo nome
+=======================================================================================
+Published: 2008-10-30 19:05:55
+
+permite utilizar **métodos php para mapear stored procedures** do postgreSQl e
+manipular seus parametros e result sets.
+
+  1. include_once 'ipgpl.class.php';
+  2. $p = new ipg(array('DEBUG'=>true, 'dsn'=>"host=localhost;dbname=teste"), "postgres", "postgres");
+  3. $p->Teste->Teste('Ivo Nascimento','10/10/2008','2008-10-10', '10:00','22:19:35.488543-02', 10, 10.10);
+  4. print_r($p->Teste->Teste('Ivo Nascimento')->fetch(PDO::FETCH_ASSOC));
+  5. print_r($p->outroteste->soma2(10,20)->fetch());
+  6. print_r($p->outroteste->soma2(ipg::_INFO));
+    
+    iann@iann:~/Projeto/pl2method$ php teste.php
+    Array
+    (
+        [0] => outroteste
+        [1] => soma2
+        [2] => integer
+        [3] => p1 integer, p2 integer
+    )
+    iann@iann:~/Projeto/pl2method$ php teste.php
+    valor: Ivo Nascimento      	=>	    'Ivo Nascimento'		Character
+    valor: 10/10/2008          	=>	        '10/10/2008'		Date
+    valor: 2008-10-10          	=>	        '2008-10-10'		Date
+    valor: 10:00               	=>	             '10:00'		Time
+    valor: 22:19:35.488543-02  	=>	'22:19:35.488543-02'		Time
+    valor: 10                  	=>	                  10		Integer
+    valor: 10.1                	=>	                10.1		Float
+    valor: Ivo Nascimento      	=>	    'Ivo Nascimento'		Character
+    Array
+    (
+        [teste] => Ivo Nascimento
+    )
+    valor: 10                  	=>	                  10		Integer
+    valor: 20                  	=>	                  20		Integer
+    Array
+    (
+        [soma2] => 30
+        [0] => 30
+    )
+    Array
+    (
+        [0] => outroteste
+        [1] => soma2
+        [2] => integer
+        [3] => p1 integer, p2 integer
+    )
+
