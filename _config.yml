@@ -16,6 +16,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 
+maruku:
+  use_tex:    false
+  use_divs:   false
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -27,7 +30,7 @@ author :
   github : iannsp
   twitter : ivonascimento
   feedburner : ivonascimento
-
+  lastfm     : iannsp
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
