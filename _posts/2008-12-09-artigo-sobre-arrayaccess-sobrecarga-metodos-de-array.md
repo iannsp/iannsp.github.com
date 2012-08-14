@@ -1,0 +1,222 @@
+---
+layout: default
+title: Artigo sobre ArrayAccess - sobrecarga métodos de Array
+---
+
+
+
+Artigo sobre ArrayAccess - sobrecarga métodos de Array
+======================================================
+Published: 2008-12-09 19:09:22
+
+Na palestra que ministrei junto com o Augusto(Elfo) na conferência de php
+organizada pela Tempo Real Eventos deste ano, o pouco que código que escrevi
+falava sobre o arrayAccess e vou agora trabalhar um pouco mais a ideia aqui.
+ArrayAccess é uma Interface, ou seja, um contrato que uma classe
+assina(implements) e que cria a obrigação de implementação dos métodos ali
+descritos e que permite somente a declaração do método, sem implementação,
+como é o caso da classe abstrata e futuramente irei tratar de discutir o por
+que de usar uma(interface) ou outra(classe abstrata).
+
+Seu intuito(do ArrayAccess) é permitir a sobrecarga de métodos de leitura e
+escrita de dados em array e sua declaração, como encontrada no docs do php, se
+encontra abaixo:
+
+    
+      ArrayAccess   {
+    /* Methods */
+    abstract public boolean ArrayAccess::offsetExists ( string $offset )
+    abstract public mixed ArrayAccess::offsetGet ( string $offset )
+    abstract public void ArrayAccess::offsetSet ( string $offset , string $value )
+    abstract public void ArrayAccess::offsetUnset ( string $offset )
+    }
+
+Cada um desses métodos permite a sobrescrita de alguma operação realizada com
+um array, então, vamos a eles.
+
+    
+    abstract public boolean ArrayAccess::offsetExists ( string $offset )
+
+Este método permite escrever algoritmo que manipule as situações em que um
+array é questinado se tem um índice ou não, tal como com a função isset(),
+array_key_exists().
+
+    
+    abstract public mixed ArrayAccess::offsetGet ( string $offset )
+
+Este método permite a manipulação do acesso aos dados do array, o que ocorre
+toda vez que alguma informação é lida nele como um echo, printf, atribuição do
+valor de um índice a uma variável outra qualquer.
+
+    
+    abstract public void ArrayAccess::offsetSet ( string $offset , string $value )
+
+Este método permite a manipulação de escrita de dados no array, caso de uma
+atribuição de valor.
+
+    
+    abstract public void ArrayAccess::offsetUnset ( string $offset )
+
+E finalmente este método que permite sobrecarregar as ações que apagam
+índices/valores do array. Ok, eu se fosse voce estaria agora me perguntando
+qual seria a utilidade de sobrecarregar os métodos de um array, permitindo que
+as ações de ler, gravar, apagar fossem escritas da forma que eu desejasse. Eu
+vou tentar colaborar com a sua imaginação(pouco, por que a minha já é curta)
+através de alguns exemplos de aplicações que poderiam se beneficiar disso. O
+primeiro exemplo é um no qual usaremos um array para acessar dados do banco de
+dados. Nenhuma novidade com relação a isso, a não ser o fato de que você não
+fará mais o trabalho de acesso ao bano de dados explicitamente para depois
+colocar os dados no array e ai sim trabalhar com ele. Você simplesmente vai
+acessar o array baseado nas regras que foram definidas por voce. Para este
+exemplo vamos trabalhar com a idéia de que necessitamos manipular o registro
+de uma pessoa com os dados de rg,nome e sexo.
+
+    
+    class Pessoa implements ArrayAccess{
+      public $nome;
+      public $idade;
+      public $sexo;
+      private $conn;
+      private $cansave = true;
+    public function __construct(){
+    	$this->conn = new PDO("mysql:host=localhost;dbname=zend","outro","outro");
+    }
+    public function __unset($vname){
+    	echo "unset $vname";
+    }
+    public function __destruct(){
+    	echo "destructor";
+    	if (!$this->cansave) { echo "nao grava nada";return;}
+    	echo "fim";
+    	 if ((int) $this->id != null ){
+    	 $this->conn->exec("update pessoa set nome='{$this->nome}', idade= {$this->idade}, sexo = '{$this->sexo}' where id={$this->id}; ");
+    	}else{
+    	 $this->conn->exec ("insert into pessoa (nome,idade,sexo) values ('{$this->nome}',{$this->idade},'{$this->sexo}');");
+    	}
+    }
+    public function offsetExists( $offset )
+            {
+    	    $d = $this->conn->query("show fields from pessoa where Field='{$offset}'");
+    	    $Field = $d->fetch(PDO::FETCH_NUM);
+    	    return ($Field ===false)?false:true;
+            }
+            public function offsetSet( $offset, $value)
+            {
+                $this->$offset = $value;
+            }
+            public function offsetGet( $offset )
+            {
+    	    if ($this->id != null){
+    		$d = $this->conn->query("select {$offset} from pessoa where id={$this->id};");
+    	        $data = $d->fetch(PDO::FETCH_NUM);
+    		$this->$offset= $data[0];
+    		return $data[0];
+    	    }
+            }
+            public function offsetUnset( $offset )
+            {
+    	    if ($this->id != null && $offset !='id'){
+    		$d = $this->conn->exec("update pessoa set {$offset}='' where id={$this->id};");
+    		unset( $this->$offset );
+    	    }else{
+    		$d = $this->conn->exec("delete from pessoa  where id={$this->id}");
+    	        $this->cansave = false;
+    	    }
+            }
+    }
+    // trabalhando com o array...
+    
+    // indicando um ID e caso o ID exista na tabela será atrelado os dados do sgdb ao array.
+    $P['id'] = 4;
+    
+    // se forem digitados somente os dados abaixo, sem id, os dados acabaram criando um novo registro no sgdb, mas se forem digitados depois de indicar um ID eles sobrescreveram os dados na tabela.
+    $P['nome']='Sula Miranda';
+    $P['idade'] = 10;
+    $P['sexo']= 'F';
+    // a linha abaixo tenta localizar na tabela se existe a coluna nome__.
+    var_dump( isset($P['nome__']));
+    // esta linha imprime o nome do registro digitado
+    echo $P['nome'];
+    // se for feito um unset no ID o registro é apagado
+    unset($P['id']);
+    
+    // se for feito o unset em qualquer índice menos o ID o campo é sobrescrito com vazio.
+    unset($P['nome']);
+
+O exemplo acima apresenta um uso do array, fazendo com que ele opere ligado ao
+banco de dados, mas essa já é uma operação que fazemos normalmente, mas que
+tal manipularmos um arquivo como um array?! Vamos criar um objeto chamado
+TxtFile que ira permitir trabalhar as linhas do arquivo como se fossem índices
+do array e que fara a gravação automática das alterações.
+
+    
+    class TxtFile implements ArrayAccess{
+       	private $fpath;
+      	private $linhas= Array();
+    	public function __construct($fpath){// loading do arquivo...
+    		$this->file = fopen($fpath,'r');
+    		$this->fpath = $fpath;
+    		$this->populateLine();
+    		fclose ($this->file);
+    	}
+    	private function populateLine(){
+    	while (!feof($this->file))
+    		array_push($this->linhas,fgets($this->file));
+    	}
+    	public function __destruct(){// salva o arquivo.
+    	$this->file = fopen($this->fpath,'w');
+    	foreach ($this->linhas as $linha)
+    		fwrite($this->file,$linha);
+    	}
+    	public function offsetExists( $offset ){// localiza
+    			$id = (int)$offset;
+    			return (isset($this->linhas[$id]))?true:false;
+    	}
+    	public function offsetSet( $offset, $value){
+    			$id = (int)$offset;
+    			$value .=(!strpos($value,"\n")>0)?"\n":"";
+    			if(isset($this->linhas[$id]))
+    				$this->linhas[$id]= $value;
+    			else
+    				array_push($this->linhas,$value);
+    	}
+    	public function offsetGet( $offset ){
+    			$id = (int)$offset;
+    			if($id >= 0  && $id < count($this->linhas))
+    				return $this->linhas[$id];
+    	}
+    	public function offsetUnset( $offset ){
+    			$id = (int)$offset;
+    			if($id >= 0  && $id < count($this->linhas))
+    					unset($this->linhas[$id]);
+    				else
+    					return false;
+    	}
+    }
+    
+    //trabalhando com o objeto...
+    include 'base.class.php';
+    
+    $info = (pathinfo(__FILE__));
+    //cria o objeto que permitira trabalhar com o arquivo como array
+    $F = new TxtFile("{$info['dirname']}/teste.txt");
+    
+    //imprimi o valor de uma linha do arquivo.
+    echo $F[3];
+    
+    gravando linhas no arquivo
+    // se a linha 30 existir, substitui o valor contido nela, senao, cria a linha id=count($linhas) e coloca o valor la para ser gravado posteriormente.
+    var_dump($F[30]="qualquer coisa");
+
+Esses dois exemplos são apenas uma mosra do que pode ser feito com
+ArrayAccess. A pergunta que fica agora é se vale a pena utilizar o acesso como
+array e aqui, nesse ponto, entra o como voce programa e que tipo de estrutura
+você prefere escrever. Você terá que escrever um objeto para manipular como
+array, mas dentro do software que utilizar o código você acaba substituindo ->
+por []. Nesses dois casos que descrevi acho que colabora pois deixa o código
+limpo e facilitam o trabalho com a estrutura, primeiro do banco de dados e
+depois de um arquivo. Faz a diferença saber usar este recursos, em termos de
+estratégia, eu temo que não, mas mesmo assim, tinha que apresentar aqui este
+tipo de código para que a gente tivesse consciência desse tipo de aplicação
+que a SPL permite, e isso é um dos recursos mais simples(se não for o mais).
+

@@ -1,0 +1,21 @@
+---
+layout: default
+title: FANN - Fast Artificial Network Library v. 2.1b
+---
+
+
+Published: 2008-10-21 18:55:35
+
+Estava eu pesquisando novas coisas de php quando me deparei com esta
+biblioteca. A [Fann](http://leenissen.dk/fann/index.php) e uma biblioteca que
+vai permitir usar inteligencia artificial sem que voce tenha que se tornar um
+especialista(a nao ser que queira estudar a materia - e isso eu recomendo).
+Por enquanto, eu estou estudando a mesma, mas o que posso te dizer eh que quem
+escreveu o bind de php (originalmente escrita em c, essa biblioteca ganhou
+bind para 15 linguagens incluindo Delphi, .Net, Java, Ruby and so on)caprichou
+mesmo e quem escreveu a biblioteca tinha muito conhecimento da area e sabia o
+que disponibilizar para nos, meros mortais. Esperem ao menos um artigo aqui
+sobre esse assunto, podem ter certeza. Se quiser fazer o download do pdf da
+documentacao, [clique aqui](http://prdownloads.sourceforge.net/fann/fann_doc_c
+omplete_1.0.pdf?download)
+

@@ -1,0 +1,27 @@
+---
+layout: default
+title: php 5 minutes 3 - bootstrap
+
+---
+
+
+php 5 minutes 3 - bootstrap
+===========================
+Published: 2010-02-01 04:21:14
+
+Ola a todos, dessa vez o php5minutes estará falando sobre o bootstrap, o
+arquivo cuja tarefa é preparar a aplicação configurando todo o environment
+para que ela seja executada sem problemas.
+
+para continuar lendo e ouvir o cast, clique em
+
+Esse podcast fala exclusivamente de bootstrap, um assunto no qual uma conversa
+pode se extender por muito, muito tempo. Eu procurei abordar alguns pontos que
+acho interessante como configuração, portabilidade e desenvolvimento com svn.
+[podcast]http://ianntech.com.br/wp-
+content/uploads/2010/01/php5minutes-3-bootstrap.mp3[/podcast] Procure seguir
+no twitter a hash tag #php5minutes. voce pode adicionar o podcast ao
+iTunes(veja como fazer no ) e também, para quem prefere fazer o download [aqui
+vai o link](http://ianntech.com.br/wp-content/plugins/download-
+monitor/download.php?id=15) Um abraço.
+

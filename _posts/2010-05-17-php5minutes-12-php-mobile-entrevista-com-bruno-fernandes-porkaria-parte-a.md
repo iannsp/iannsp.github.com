@@ -1,0 +1,68 @@
+---
+layout: default
+title: php5minutes 12 - php mobile  - Entrevista com Bruno Fernandes (porkaria) - parte A
+---
+
+
+php5minutes 12 - php mobile  - Entrevista com Bruno Fernandes (porkaria) - parte A
+==================================================================================
+Published: 2010-05-17 21:19:57
+
+Pessoal, esse podcast é especial. É a primeira entrevista que o php5minutes
+realiza e nada melhor para começar do que escolher um amigo para sabatinar a
+respeito de um assunto de interesse geral. Desenvolvimento de sistemas web
+voltados para mobile. Esse é o assunto dessa entrevista me mostrou mais uma
+vez por que o porkaria é uma pessoa querida por todos, a conversa fluiu e o
+resultado esta aqui, como podem acompanhar. A entrevista foi dividida em duas
+- afinal - fica dificil escutar 50 minutos(e isso após o trabalho de edição)
+de uma vez só. Isso por que acredito que você vai usar um tempo livre para
+ouvi-la, assim como faz com o php5minutes tradicional, que as vezes dura 5,
+outras 6,7,8 - tudo bem, as vezes até 10 minutos. Eu espero que aprecie a
+entrevista e comente aqui no blog, para poder melhorar o procedimento - tem
+mais pessoas que eu gostaria de entrevistar e quero fazer isso de uma melhor
+forma a cada vez. Enfim, nessa primeira parte nós conversamos sobre segredos
+do universo - 42 - não, acho que não. O assunto, que é programação de sistemas
+mobile usando PHP começou a ser abordado aqui, além de finalmente descobrir a
+causa de um apelido desses - porkaria.  Fizeram participações especiais o
+pica-pau, o pato Donald e o Taz, mas esse não falou nada não, ele foi uma
+parte do assunto(e valeu por permitir o comentário). Como fica então um
+sistema desenvolvido em PHP para rodar nos devices mobile que temos vagando
+por ai e que estão cada vez mais presentes no nosso dia-a-dia... vamos ouvir
+então - aqui entra a vinheta do video show ;) [podcast]http://ianntech.com.br
+/wp-content/plugins/download-monitor/download.php?id=38[/podcast] Espero que
+gostem, com vocês, Bruno Fernandes - porkaria, eu e nossa tão querida
+linguagem, o PHP. [![](http://ianntech.com.br/wp-
+content/uploads/2010/05/logo_iai.png)](http://ianntech.com.br/wp-
+content/uploads/2010/05/logo_iai.png)E uma novidade, agora o php5minutes é
+patrocinado, essa entrevista, por exemplo, esta sendo patrocinada pelo
+Instituto de artes Interativas -**
+**[**http://iai.art.br**](http://iai.art.br) - uma produtora de software com
+um know how que permite que ministrem cursos de desenvolvimento de jogos e
+programação de aplicativos em geral para iPhone Arduino(eu fiz o curso lá e
+recomendo) - e que inclusive _nos forneceu um curso de iPhone para ser
+sorteado entre os ouvintes_ - para tanto, basta que você esteja seguindo o
+twitter [@php5minutes](http://twitter.com/php5minutes) e retwittar a mensagem
+de promoção dessa entrevista, que é: **"quero concorrer a um curso de iPhone
+na iai http://bit.ly/9am0A3 - http://migre.me/FVlR". **** ** ** ** ** **
+**Links para referências** Php Mobile:
+[http://www.phpmobile.com.br/](http://www.phpmobile.com.br/) Bruno Fernandes:
+[http://www.porkaria.com.br/](http://www.porkaria.com.br/) E os projetos que
+foram comentados na parte I - ou serão comentados na parte dois dessa
+entrevista. Wall4PHP: [http://wall.laacz.lv/](http://wall.laacz.lv/) Tera-
+wurfl: [http://www.tera-wurfl.com/wiki/index.php/Main_Page](http://www.tera-
+wurfl.com/wiki/index.php/Main_Page) O que é Mobile Payment ?
+[http://www.porkaria.com.br/2010/05/02/o-que-e-mobile-
+payment/](http://www.porkaria.com.br/2010/05/02/o-que-e-mobile-payment/)
+Gerando Qr-code com PHP: [http://www.porkaria.com.br/2010/04/24/gerando-qr-
+code-com-php/](http://www.porkaria.com.br/2010/04/24/gerando-qr-code-com-php/)
+O projeto WURFL: [http://www.porkaria.com.br/2010/04/22/o-projeto-
+wurfl/](http://www.porkaria.com.br/2010/04/22/o-projeto-wurfl/) Identificar
+qual celular está acessando o seu site: [http://www.porkaria.com.br/2010/04/19
+/identificando-qual-celular-esta-acessando-
+site/](http://www.porkaria.com.br/2010/04/19/identificando-qual-celular-esta-
+acessando-site/) O que é Desenvolvimento Mobile Web:
+[http://www.porkaria.com.br/2010/04/04/o-que-e-desenvolvimento-mobile-
+web/](http://www.porkaria.com.br/2010/04/04/o-que-e-desenvolvimento-mobile-
+web/) Slides das palestras do porkaria, com várias dicas de ferramentas:
+[http://www.porkaria.com.br/palestras/](http://www.porkaria.com.br/palestras/)
+

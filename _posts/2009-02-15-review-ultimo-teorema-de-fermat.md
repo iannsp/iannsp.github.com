@@ -1,0 +1,80 @@
+---
+layout: default
+title: Review: Último Teorema de Fermat
+---
+
+
+Review: Último Teorema de Fermat
+================================
+Published: 2009-02-15 19:15:35
+
+Eu ja fiz outros reviews aqui no site, e em todos eles falei de livros dos
+quais gostei, logo, você não vai encontrar um que diga que um livro é ruim.
+Isso pq para mim, não faria sentido dispender tempo falando de algo de que não
+gostei(já existem bastante lugares onde isso é feito), mas o livro do qual
+irei falar agora tem um sabor especial para mim. Ele é o responsável, junto a
+um professor de calculo I, de eu ter me tornado uma pessoa que gosta de
+matemática, mesmo que ela muitas vezes me faça sentir uma sensação de que não
+sei nada nesse mundo(e isso não deixa de ser verdade). O professor,
+tristemente, não me lembro o nome, pois os anos passaram(isso foi em 2001),
+mas o livro, finalmente esta aqui comigo.
+
+Eu demorei tanto para compra-lo pelo simples fato de que queria vê-lo no
+momento da compra e nenhuma livraria tinha ele na prateleira. Não queria
+encomenda-lo, compra-lo pela internet e nada disso. Queria pegar o livro,
+olhar para a capa e dizer, pronto, é esse(me vê ai uma duzia pq quero mandar
+para as pessoas que tenho apreço). Na época eu tentava pela primeira vez
+tentar cursar uma faculdade. Era ciência da computação em uma faculdade de
+Piracicaba, interior de Piracicaba e o nome era EEP(Escola de Engenharia de
+Piracicaba). Não passei do primeiro ano, o dinheiro acabou. Mas a lição de que
+o lugar mais importante da faculdade é a biblioteca e ao lado de algum
+professor que você escolha a dedo para ser seu tutor ficou e levo ela até
+hoje. Não é humilhação olhar para alguém que tem mais experiência em um
+assunto específico e pedir para que ele, ou ela, dispensa uma parte do seu
+tempo tentando lhe tirar as dúvidas(eu disse dúvidas pois você deve buscar o
+conhecimento por você mesmo e pedir ajuda somente para retirar as pedras do
+caminho, não caminhar). O livro é o último teorema de Fermat, escrito pelo
+ph.D. em física de particulas Simon Singh, um cara que teve a sorte de estar
+ao lado dos maiores matemáticos do século enquanto o maior problema dos
+últimos três séculos era, finalmente, superado pelo matemático Andrew Wiles,
+sob um silêncio digno dos grandes mestres, mas que também correspondia ao medo
+do fracasso e a realidade de sua idade, que indicava à comunidade acadêmica
+que ele era um matemático cujo período de criatividade havia passado. A luta
+entre um homem e um problema cujo enunciado não ocupa nem mesmo o espaço de
+uma linha poética, mas que se ocupar a sua mente, pode se tornar a mais bela
+das poesias ocupa as 324 páginas do livro em corpo 11/13 com papel off-
+white(que torna a leitura muito agradável). Vamos começar do começo. O teorema
+de Fermat diz que: x²+y²=z², e que isso não é verdade para a potências maiores
+que 2. Simples não? são somente oito signos matemáticos e eles juntos
+expressão um desafio que ocupou a mente de matemáticos por mais de 350 anos e
+cuja solução implicou na criação de novas técnicas matematicas. Antes de
+Andrew Wiles, outros matemáticos notáveis tentaram e falharam, alguns pagando
+com a própria vida e outros com todo o tempo de carreira(o que não deixa de
+ser um sacrifício, concorda?).
+[Fermat](http://pt.wikipedia.org/wiki/Pierre_de_Fermat) foi um dos últimos
+representantes da era dos grandes cientistas, quando a ciência ainda não
+caminhava para o grau de especialização que existe hoje(ou caminhava, isso é
+uma grande discussão, que cabe ser tomada durante muitas rodadas de cerveja,
+afinal, nós somos humanos[eles parecem que não]). Ele nunca teve uma educação
+formal em matemática, mas foi considera, por exemplo, o maior matemático de
+seu tempo(isso foi dito por Pascal) e príncipe dos amadores. Nada mal para
+quem foi o Juiz supremo na Corte Criminal Soberana do parlamento de Toulouse,
+uma carreira pública que com certeza só lhe deixava livre os tempos de lazer
+para dedicar-se a sua bela matemática. O livro praticamente é escrito como um
+romance e é notável isso, já que apresenta questões de matematica com uma
+clareza que permitem a qualquer um de nós(até a mim) entender o contexto do
+problema e a dificuldade das soluções. Falar sobre o conteúdo do livro seria
+como entregar o presente antes da data de aniversário, estragando o valor da
+ansiedade e o prazer da descoberta, mas posso adiantar alguns nomes que
+aparecer em suas páginas, começando por Diofante com Aritmética, Pitágoras seu
+Princípia, Euler, Sophie Germain que se disfarçou de homem para adentrar os
+mistérios da matemática(exclusivos, à época, aos homens), Alan Turing, que
+dispensa apresentações, gGoro Shimura e outros que por não serem citados aqui,
+não deixam de ser tão importante quanto. Enfim, espero que esse texto tenha
+lhe despertado a vontade de ler este livro, e que, ao faze-lo, possa emitir
+sua opnião(que eu gostaria de ouvir). Um grande abraço A propósito, o nome do
+professor é Odahyer Cavallini Jr e me deu suporte quando entrei na faculdade e
+lhe confidenciei meu quase anafalbetismo em matemática, mas meu grande desejo
+de superar essa fase. Se hoje estou ao menos lendo as páginas de matematica,
+devo isso a ele.
+

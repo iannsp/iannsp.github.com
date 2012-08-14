@@ -1,0 +1,29 @@
+Download
+========
+Published: 2009-10-11 20:18:51
+
+Arquivos disponiveis para download relacionados aos meus projetos, codigos,
+palestras e outros[](http://ianntech.com.br/wp-
+content/uploads/2009/10/webservice.pdf) [ webservice (palestra de webservices
+usando nusoap em php)](http://ianntech.com.br/wp-
+content/uploads/2009/10/webservice.pdf) [pl2methods.tar (projeto de
+transparencia de stored procedures em php)](http://ianntech.com.br/wp-
+content/uploads/2009/10/pl2methods.tar.gz) [pl2method0.0.2.tar (ultima versao
+do pl2methods)](http://ianntech.com.br/wp-
+content/uploads/2009/10/pl2method0.0.2.tar.gz)
+[qualidade_e_performance_de_sistemas2.0 (palestra de php sobre qualidade de
+codigo e performance)](http://ianntech.com.br/wp-
+content/uploads/2009/10/qualidade_e_performance_de_sistemas2.0.pdf)
+[pl2method-0.0.1.tar (versao inicial do pl2method)](http://ianntech.com.br/wp-
+content/uploads/2009/10/pl2method-0.0.1.tar.gz) [pgvisio(projeto descontinuado
+de administrador de servidores postgresql)](http://ianntech.com.br/wp-
+content/uploads/2009/10/pgvisio.zip) [php_fann (palestra sobre artificial
+network em php usando bind dispnivel da fann)](http://ianntech.com.br/wp-
+content/uploads/2009/10/php_fann.pdf) [objetosemacao (palestra antiga sobre
+orientacao a objeto em php)](http://ianntech.com.br/wp-
+content/uploads/2009/10/objetosemacao.pdf) [arrayaccess.tar (arquivos da
+palestra de SPL na phpconference 2008)](http://ianntech.com.br/wp-
+content/uploads/2009/10/arrayaccess.tar.gz) [maonamassaPGA (arquivo da
+apresentacao durante o curso de postgresql pela TRE)](http://ianntech.com.br
+/wp-content/uploads/2009/10/maonamassaPGA.pdf)
+

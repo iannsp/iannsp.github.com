@@ -1,0 +1,18 @@
+Blue Seed Framework
+===================
+Published: 2011-07-28 07:17:50
+
+[![](http://ianntech.com.br/wp-
+content/uploads/2011/07/blueseed-2-300x99.png)](http://ianntech.com.br/wp-
+content/uploads/2011/07/blueseed-2.png) &nbsp_place_holder;
+&nbsp_place_holder; &nbsp_place_holder; &nbsp_place_holder; O blue seed é um
+framework php que utilizo para realizar alguns trabalhos e que vem sendo
+desenvolvido com as seguintes caracteristicas:
+
+  1. Mapeamento Objeto Relacional
+  2. Modelo MVC
+  3. Suporte multilinguas
+  4. Annotations
+  5. Publicação de Api.
+Aqui tem o link para o [github](https://github.com/iannsp/Blue-Seed-)
+

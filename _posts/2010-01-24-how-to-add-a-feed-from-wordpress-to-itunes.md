@@ -1,0 +1,17 @@
+---
+layout: default
+title: How to add a feed from Wordpress to iTunes
+
+---
+
+
+How to add a feed from Wordpress to iTunes
+==========================================
+Published: 2010-01-24 06:17:37
+
+If you like to add a feed from a wordpress software, like this site to lissen
+the podcasts at iTunes you just need copy the link of rss
+(http://ianntech.com.br/?feed=rss2), open the iTunes, selected the Advanced
+menu and click at Subscribe to Podcast and post the url there. The iTunes will
+find the mp3 files and create a item for your podcast there.
+
