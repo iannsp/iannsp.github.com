@@ -5,8 +5,6 @@ title: Você deve ser proativo no trabalho?
 categories: [ empresas, emprego ]
 ---
 
-Published: 2012-07-19 21:19:53  
-
 Já aconteceu comigo algumas vezes e imagina que também possa ter acontecido com você. 
 
 Você esta todo empolgado mostrando um resultado que você alcançou, mostra os unit tests, mostra os super-fashions blocos de pontos, outputs do phpunit para alguém. 
