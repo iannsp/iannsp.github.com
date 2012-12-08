@@ -2,6 +2,7 @@
 ---
 layout: default
 title: PGUnit - Test Drive Development on PostgreSQL stored Procedures
+categories: [ postgresql ]
 ---
 
 
