@@ -5,9 +5,6 @@ title: zzphp
 categories: [php, C]
 ---
 
-zzphp
-=====
-Published: 2008-10-18 19:17:02
 
 Google Code:"svn":http://code.google.com/p/zzphp/
 

@@ -1,3 +1,4 @@
+
 --- 
 layout: default 
 title: O bom e ruim das plataformas e canais de software

@@ -5,7 +5,6 @@ categories: [python, evento]
 ---
 
 
-Published: 2008-10-21 18:57:04
 
 Estive la no Conisli, para o primeiro dia das palestra, mas no segundo nao pude estar presente. 
 
