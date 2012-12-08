@@ -1482,3 +1482,20 @@ hr {
   *display: inline;
   float: right;
 }
+
+.polaroid {
+	position: relative;
+	background: #fff;
+	width: 200px;
+	padding: 7px;
+	margin: 10px;
+	text-align: center;	
+	-moz-box-shadow: 1px 1px 3px #222;
+	-moz-transform: rotate(-5deg);
+	-webkit-box-shadow: 1px 1px 3px #222;
+	-webkit-transform: rotate(-5deg);
+	box-shadow: 1px 1px 3px #222;
+	-o-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
