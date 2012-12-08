@@ -10,8 +10,8 @@ destination: ./_site
 plugins:     ./_plugins
 future: true
 lsi:   false
-markdown:    maruku
-permalink: date
+#markdown:    maruku
+permalink: /:categories/:year/:month/:day/:title/
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
@@ -26,7 +26,7 @@ title : Ivo Nascimento
 tagline: small pieces of small things
 author :
   name : Ivo Nascimento
-  email : iannsp@gmail.com
+  email : iannsp at gmail.com
   github : iannsp
   twitter : ivonascimento
   feedburner : ivonascimento

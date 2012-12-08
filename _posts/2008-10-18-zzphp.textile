@@ -1,0 +1,27 @@
+
+---
+layout: default
+title: zzphp 
+categories: [php, C]
+---
+
+zzphp
+=====
+Published: 2008-10-18 19:17:02
+
+Google Code:"svn":http://code.google.com/p/zzphp/
+
+Portugues: Esse projeto visa criar um modulo php em c para fazer bind das "funcoes zz":http://funcoeszz.net/ cujo autores são o "Aurélio Marinho Jargas":http://aurelio.net e "Thobias Salazar Trevisan":http://thobias.org. A ideia eh que voce possa subistituir a chamada do tipo system, exec e outros, que era necessarias para executar as funcoes dessa biblioteca por uma funcao do mesmo nome em php. tipo:
+
+system('funcoeszz zzascii 1 1', $retorno);
+
+por:
+
+zzascii();
+
+Sendo que existe outro ganho.No caso do system voce tem de lidar com a resposta inteira em texto e no caso do uso da extensão, advinha... o resultado eh organizado em estruturas de dados como Array. Isso melhora a usabilidade para nós, usuarios php, que agora poderemos aproveitar melhor as maravilhas dessa biblioteca. Para que gosta de reclamar.... e dizer que isso eh somente um bind etc... Eu estou pensando e escrever a zz em duas versoes, a bind(que pode ser atualizada atualizando o script shell da zz. E a stand-alone, que vai precisar ser atualizado o so(mas veja bem, isso vai demorar pacas e se voce quiser usar agora, eh so usar o bind(quando estiver terminado) 
+
+Ingles: 
+
+The intend is create two php modules to run funcoes zz directly by php with out explicit system or exec or correlated funciont. All the functions have you answers adapted and the you got arrays and not more the original text message provided by bash The first module is a bind and is recommended for how think to stay up to date with the funcoes zz(you need install it) I working on this now. The second module is planned to by self independent, so, I need rewrite all functions(and it is a herculeos effort). This module is planned... only planned, in ideas plan of mind ;)
+
