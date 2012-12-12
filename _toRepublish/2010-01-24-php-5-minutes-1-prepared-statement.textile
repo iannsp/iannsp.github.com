@@ -1,0 +1,34 @@
+---
+layout: default
+title: php 5 minutes - 1 - Prepared Statement
+
+---
+
+
+php 5 minutes - 1 - Prepared Statement
+======================================
+Published: 2010-01-24 05:09:49
+
+Esse é um projeto de podcasting. Há um tempo que desejo participar de um
+projeto de podcast ou ter o meu próprio e me faltava ídeia ou oportunidade
+para começar, até que veio o ano de 2010 e eu vi que em mais dois talvez o
+mundo acabe e resolvi começar agora antes que a coisa se estrague de vez. O
+que é o php 5 minutes? Cada semana vou falar sobre algo de php... bem, nem
+sempre de php. Posso falar de projetos que achei interessante, de produtos que
+vi que poderiam gerar algum diferencial, de alguma tecnologia nova(ou velha).
+
+para ouvir o cast, clique no link
+
+A ideia é essa. Quem quiser ouvir vai gastar 5 minutos do seu dia e pode ou
+não trazer alguma informação que adicione algo ao seu dia, mas,
+principalmente, o esquema é de sementinha(como fala um amigo). Eu puxo o
+assunto e se você achar legal, continua ele ai nos comentários. O silêncio
+também é opção, afinal, não imagino que as coisas que vou falar sejam nada de
+novo no mundo do php ou da programação em geral.
+[podcast]http://ianntech.com.br/wp-content/uploads/2010/01/php5minutos-1
+-Prepared-Statements.mp3[/podcast] Em tempo, o assunto desse podcast veio de
+uma pergunta do estagiário Tiago Rigo, que trabalha na Equipe de Pesquisa e
+Desenvolvimento da qual faço parte. [link para
+download](http://ianntech.com.br/wp-content/plugins/download-
+monitor/download.php?id=16)
+

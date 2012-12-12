@@ -1,0 +1,27 @@
+---
+layout: default
+title: php5minutes 4 - Namespace
+
+---
+
+
+php5minutes 4 - Namespace
+=========================
+Published: 2010-02-08 04:04:14
+
+Ola pessoal, Obrigado pelos comentários nos podcasts anteriores e pela
+participação toda que esta havendo. Duas pessoas comentaram que queriam ouvir
+sobre Namespace e achei que realmente é um baita de um assunto, então esse
+podcast aqui fala somente sobre esse novo recurso da linguagem PHP, que apesar
+de estar presente a algum tempo, ainda deixa muitas dúvidas e gerar
+controvérsias.  Falo sobre o por que do operador, o por que de usar namespace
+e no que ele pode ajudar seus projetos e sua codificação. Espero que vocês
+gostem e continuem comentado. Assim eu posso ir trabalhando para melhorar o
+conteúdo e a forma de apresenta-lo. Um pequeno detalhe é que esse assunto
+exigiu mais tempo que o normal, então temos aqui o que podemos chamar de
+podcast duplo. No fim foram quase 10 minutos. [podcast]http://ianntech.com.br
+/wp-content/uploads/2010/02/php5minutes-4-namespace.mp3[/podcast] para os que
+tem problemas para ouvir o cast utilizando player, aqui vai o [link de
+download](http://ianntech.com.br/wp-content/plugins/download-
+monitor/download.php?id=20). Um Abraço
+
