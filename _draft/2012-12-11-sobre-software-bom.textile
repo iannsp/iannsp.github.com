@@ -1,0 +1,66 @@
+
+---
+layout: default
+title: Sobre software bom
+categories: [flush]
+---
+
+Um questionamento sobre o qual venho me debruçando é o que faz um software bom. E gostaria de compartilhar com você o que me parece ser ao menos uma boa resposta.
+
+_"Software bom é o que cumpre a tarefa para qual foi criado."_
+
+Essa é a conclusão a que cheguei após racionalizar a palavra bom e tentar traze-la para a realidade de software.
+
+
+vejamos a definição da palavra no dicionário "michaelis(michaelis)":http://michaelis.uol.com.br/moderno/portugues/index.php?lingua=portugues-portugues&palavra=bom
+
+*bom1*
+adj (lat bonu) 1 Que é conforme ao uso a que se destina. 2 Que tem bondade. 3 De agradável qualidade. 4 Que se tornou hábil nas artes e ciências, num ofício ou em qualquer exercício corporal. 5 Que cumpre rigorosamente os seus deveres. 6 Que gosta de fazer o bem. 7 Conforme à justiça, à virtude, ao dever. 8 Benéfico, salutar. 9 Digno de crédito, garantido, seguro. 10 Próprio, apto. 11 Estrito, exato, rigoroso. 12 Lucrativo, rendoso. 13 Regular, normal. Fem: boa; sup abs sint: boníssimo e ótimo; comparativo de superioridade: melhor. Antôn (acepções 2 e 6): mau, malévolo. sm 1 Pessoa benévola, honrada ou virtuosa. 2 Boas qualidades de uma pessoa ou coisa.
+
+
+Chamo de software bom todo aquele que cumpre a tarefa para qual foi criado, tendo um usuário satisfeito com o resultado. 
+
+Um exemplo é um software de bloco de notas e uma pequena definição de tarefa pela qual ele podesse ser criado.
+
+software de bloco de notas
+- objetivo: permitir que o usuário tome notas no computador como faz num caderno de notas.
+
+Olhando assim, é bom o softwares notepad(window). Isso creio que podemos concordar. Ainda não conheci alguem que não conseguisse utilizar esse software para anotar algo simples, somente texto(como no caderno de notas).
+
+
+Simples e objetivo, mas também incompleto.
+
+Se o notepad demorasse meia hora para gravar um arquivo. Ainda sim ele seria um bom software, no sentido de cumprir a tarefa para qual foi criado. Permitir que o usuario tome notas no computador como faz num caderno de notas.
+
+A asserção de que ele cumpre com sua tarefa é uma ideia objetiva, dificil de formular mas facil de compreender e analisar. Uma resposta binária a pergunta:
+
+O usuário consegue anotar algo usando o notepad?
+( ) sim ( ) não
+
+Porém, agora temos uma porção negativa a ser analisada, referente a caracteristica dele demorar meia hora para gravar uma anotação.
+
+E essa analise não tem uma resposta binária. Essa resposta depende da experiência do usuario e seu comportamento perante algo que não lhe agrade, como uma longa espera para gravar o arquivo no disco e ter certeza de que não vai perde-lo.
+
+Essa experiencia subjetiva é a que gera espaço para mais de uma aplicação criada para permitir que o usuário tome nota no computador como faz num caderno de notas.
+ 
+São softwares bons, então, o notepad(window), o gedit(linux) e o text editor(mac), mesmo que o notepad demore meia hora para gravar um arquivo, o gedit tenha um delay de 5 segundos entre cada letra digitada e o text editor não permita gravar arquivos entre as 4 da manhã e as 13 horas. 
+
+Ainda sim eles seriam softwares bons, no sentido de cumprirem a tarefa para qual foram criados, mas a subjetividade relacionada a suas caracteristicas de funcionamento permitem que ele
+
+* agradar pessoas diferentes, sendo seu software predileto.
+* desagrade pessoas diferentes, sendo seu software mais odiado.
+
+
+Todos são bons, então o usuário busca um novo diferencial, procurando aquele cujo funcionamento lhe agrada mais.
+
+
+Enfim, a frase que define o software ideal já não é software bom. Agora a palavra é software funcional, cuja definição no mesmo dicionário michaelis é:
+
+_fun.cio.nal_
+adj (lat functione+al3) 1 Relativo às funções vitais. 2 Em cuja execução ou fabricação se procura atender, antes de tudo, à função, ao fim prático: Móveis de estilo funcional. 3 Diz-se da nacionalidade aderente às funções exercidas e que se adquire ou perde com elas, como, p ex, os funcionários ou dignitários do Estado do Vaticano. 4 Relativo a funcionários públicos. 5 Med Que altera a função, mas não a estrutura. 6 Biol Que exerce ou é capaz de exercer sua função regular. 
+
+E passamos a olhar para os softwares procurando pelo que melhor cumpre a tarefa para o qual foi criado.
+
+_"Software funcional é aquele que cumpre da melhor maneira o objetivo para o qual foi criado."_ 
+
+
