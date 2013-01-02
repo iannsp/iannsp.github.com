@@ -4,4 +4,4 @@ layout: default
 title: A Model to Analize Technical and Business Stress 
 categories: [paper, technology, dev, business] 
 ---   
-
+One of the most important thing beside the use of quality softwares
