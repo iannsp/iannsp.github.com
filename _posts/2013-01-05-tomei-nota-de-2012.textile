@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Tomei Nota de 2012 
