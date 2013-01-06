@@ -8,9 +8,11 @@ categories: [arquitetura de software]
 
 published at: yyy/mm/dd hh:mm
 
-*Toda Empresa existe para realizar Lucro* (aqui vai link para a teoria de marshal)
+*Toda Empresa existe para realizar Lucro*
 
 Afora sua atividade principal, ou seja, a operação que realiza para gerar lucro, como vender um produto, prestar consultoria ou intermediar contratos, todo o resto é visto como custo.
 
 O custo é dividido em dois tipos: Aqueles que são custos operacionais, necessários para a realização da tarefa principal como contas de aluguel, água, luz, internet. E os chamados invesimentos, necessários para potencializar a capacidade de realizar lucro com relação a atividade principal como salários diferenciados para retenção de profissionais, atualização de equipamentos, ações de marketing, contratação de novos softwares ou mesmo o desenvolvimento deles.
+
+Segundo a wikipedia, temos uma definição de "Arquiteto de software":http://pt.wikipedia.org/wiki/Arquiteto_de_software
 
