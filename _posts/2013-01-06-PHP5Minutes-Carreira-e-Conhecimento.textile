@@ -15,3 +15,7 @@ Minha visão é de que não. Não dá pra ser um programador somente conhecendo 
 <object width="250" height="40" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsSong3792136740" name="gsSong3792136740"><param name="movie" value="http://grooveshark.com/songWidget.swf" /><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&songID=37921367&style=metal&p=0" /><object type="application/x-shockwave-flash" data="http://grooveshark.com/songWidget.swf" width="250" height="40"><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&songID=37921367&style=metal&p=0" /><span><a href="http://grooveshark.com/search/song?q=Ivo%20Nascimento%20Sobre%20Carreira%20e%20conhecimento" title="Sobre Carreira e conhecimento by Ivo Nascimento on Grooveshark">Sobre Carreira e conhecimento by Ivo Nascimento on Grooveshark</a></span></object></object>
 
 se quiser fazer algum comentário sobre o episódio, aqui esta a "<i>página no facebook</i>":https://www.facebook.com/pages/php5minutes/105633459480108
+
+para fazer o download utilize o linke abaixo:
+
+"php5minutes - sobre carreira e conhecimento":/res/php5minutes-carreira.zip
