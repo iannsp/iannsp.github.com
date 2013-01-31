@@ -8,7 +8,7 @@ categories: [filosofia, tecnologia, desenvolvimento de software, php5minutes]
 published at: 2013-01-31 11:20 hs
 
 Esta palestra fala sobre o pensar o desenvolvimento de software.
-É um exercício voltado de reflexão voltado a etender como realizar esse processo que é o desenvolvimento de software e quais componentes existentes nesse processo eu valorizo.
+É um exercício voltado de a entender como realizar esse processo que é o desenvolvimento de software e quais componentes existentes nesse processo eu valorizo.
 
 Aqui eu abordo o pensar desenvolvimento de software através de 3 tópicos
 
