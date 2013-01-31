@@ -1,0 +1,35 @@
+---
+layout: default
+title: Pensando o Desenvolvimento de Software 
+categories: [filosofia, tecnologia, desenvolvimento de software, php5minutes]
+---
+
+
+published at: 2013-01-31 11:20 hs
+
+Esta palestra fala sobre o pensar o desenvolvimento de software.
+É um exercício voltado de reflexão voltado a etender como realizar esse processo que é o desenvolvimento de software e quais componentes existentes nesse processo eu valorizo.
+
+Aqui eu abordo o pensar desenvolvimento de software através de 3 tópicos
+
+*1o - Franqueza* Reconhecer e deixar reconhecer o momento do conhecimento do outro e seu próprio.
+* Conhecimento técnico X Conhecimento de Humanidades X conhecimento de negócios.
+
+*2o - Reflexão*  Buscar conhecimento sobre o trabalho pensando o próprio trabalho.
+* Análise.
+* Visão.
+
+*3o - Simplicidade X Simplismo* O antagonismo entre essas duas maneira de olhar.
+* Planejamento. 
+
+Aqui esta o único slide dessa palestra:
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/16274813" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/ivonascimento/pensando-o-desenvolvimentodesoftware" title="Pensando o desenvolvimento_de_software" target="_blank">Pensando o desenvolvimento_de_software</a> </strong> from <strong><a href="http://www.slideshare.net/ivonascimento" target="_blank">Ivo Nascimento</a></strong> </div>
+
+E o audio que gravei com o ipod:
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F77237902"></iframe>
+
+
+"_para comentários acesse a página do Facebook_":https://www.facebook.com/pages/php5minutes/105633459480108
+
