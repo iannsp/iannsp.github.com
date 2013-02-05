@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: pl2method - Acesso transparente a Stored procedures do PG via métodos php de mesmo nome
