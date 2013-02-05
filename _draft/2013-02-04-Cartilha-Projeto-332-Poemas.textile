@@ -1,0 +1,15 @@
+---
+layout: default
+title: Cartilha  - Projeto 332 Poemas
+categories: [poesia, 332 poemas]
+---
+
+published at: 2013-02-05 11:00 hs
+
+Referencia: "Revista inimigo Rumor No 8 - Especial Cacaso":http://www.7letras.com.br/inimigo-rumor/inimigo-rumor-8.html
+Poema: Cartilha.
+Autor: "Antonio Carlos de Brito - Cacaso":http://pt.wikipedia.org/wiki/Ant%C3%B4nio_Carlos_de_Brito
+Editora: "7 Letras":http://www.7letras.com.br
+valor: "R$15,00":http://www.7letras.com.br/inimigo-rumor/inimigo-rumor-8.html
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F77880410"></iframe>
