@@ -7,7 +7,7 @@ categories: [php, C]
 
 Google Code:"svn":http://code.google.com/p/zzphp/
 
-Portugues: Esse projeto visa criar um modulo php em c para fazer bind das "funcoes zz":http://funcoeszz.net/ cujo autores são o "Aurélio Marinho Jargas":http://aurelio.net  e "Thobias Salazar Trevisan":http://thobias.org. A ideia eh que voce possa subistituir a chamada do tipo system, exec e outros, que era necessarias para executar as funcoes dessa biblioteca por uma funcao do mesmo nome em php. tipo:
+Portugues: Esse projeto visa criar um modulo php em c para fazer bind das "funcoes zz":http://funcoeszz.net/ cujo autores são o Aurélio Marinho Jargas, "do link":http://aurelio.net  e "Thobias Salazar Trevisan":http://thobias.org. A ideia eh que voce possa subistituir a chamada do tipo system, exec e outros, que era necessarias para executar as funcoes dessa biblioteca por uma funcao do mesmo nome em php. tipo:
 
 system('funcoeszz zzascii 1 1', $retorno);
 
