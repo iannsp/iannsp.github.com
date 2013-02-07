@@ -1,4 +1,3 @@
-
 --- 
 layout: default 
 title: Relato da Php Conference Brasil 2008 

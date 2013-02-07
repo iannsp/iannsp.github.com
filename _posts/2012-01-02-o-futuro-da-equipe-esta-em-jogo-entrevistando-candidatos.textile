@@ -1,5 +1,3 @@
-
-
 ---
 layout: default
 title: O futuro da equipe esta em jogo(Entrevistando candidatos)
