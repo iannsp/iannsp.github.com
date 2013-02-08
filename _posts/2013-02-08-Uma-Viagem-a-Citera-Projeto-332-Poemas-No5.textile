@@ -1,0 +1,17 @@
+---
+layout: default
+title: Uma Viagem a Citera  - Projeto 332 Poemas - No 5
+categories: [poesia, 332 poemas]
+---
+
+published at: 2013-02-08 00:17 hs
+
+Charles-Pierre Baudelaire (Paris, 9 de abril de 1821 — Paris, 31 de agosto de 1867) foi um poeta e teórico da arte francesa. É considerado um dos precursores do Simbolismo e reconhecido internacionalmente como o fundador da tradição moderna em poesia, juntamente com Walt Whitman, embora tenha se relacionado com diversas escolas artísticas. Sua obra teórica também influenciou profundamente as artes plásticas do século XIX.
+
+Nasceu em Paris a 9 de abril de 1821. Estudou no Colégio Real de Lyon e Lycée Louis-le-Grand (de onde foi expulso por não querer mostrar um bilhete que lhe foi passado por um colega). ( "fonte: wikipedia":http://pt.wikipedia.org )
+
+| <img src="/res/img/baudelaire.jpg"> | Autor: "Charles Baudelaire":http://pt.wikipedia.org/wiki/Charles_Baudelaire |
+| . | . |
+| <img src="/res/img/floresdomal.jpeg"> | Livro: "Flores do Mal":http://www.livrariasaraiva.com.br/produto/4062525/as-flores-do-mal-col-saraiva-de-bolso <br/>Poema: Uma Viagem a Citera.<br/> Editora: "Saraiva de Bolso":http://www.livrariasaraiva.com.br/saraiva-de-bolso/ <br/> valor: "R$ 20,60":http://www.livrariasaraiva.com.br/produto/4062525/as-flores-do-mal-col-saraiva-de-bolso |
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F78231481"></iframe>
