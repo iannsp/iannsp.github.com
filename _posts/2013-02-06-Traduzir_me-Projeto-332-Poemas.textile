@@ -1,0 +1,15 @@
+---
+layout: default
+title: Traduzir-me  - Projeto 332 Poemas - No 4
+categories: [poesia, 332 poemas]
+---
+
+published at: 2013-02-07 10:30 hs
+
+
+| <img src="/res/img/foto_ferreira_Gullar"> | Autor: "Ferreira Gullar":http://pt.wikipedia.org/wiki/Ferreira_Gullar <br/>Ferreira Gullar |
+| . | . |
+| <img src="/res/img/capatodapoesia.jpg"> | Livro: "Toda Poesia":http://link_de_compra <br/>Poema: Trazudir-me.<br/> Editora: "José Olimpio":http://link_jose_olimpio/ <br/> valor: "R$valor do livro":http://link_de_compra |
+
+[embed soundcloud]
+
