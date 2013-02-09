@@ -1,0 +1,10 @@
+---
+layout: default
+title: Projeto 332 Poemas mudou de casa
+categories: [poesia, 332 poemas]
+---
+
+published at: 2013-02-09 18:00 hs
+
+"O Projeto 332 Poemas mudou de casa, foi morar la no bairro wordpress.(clique aqui pra ir tomar um café com ele)":http://332poemas.wordpress.com/
+
