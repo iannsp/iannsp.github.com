@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Eduardo, Dulce e Fernando. Futuros Professores.
-categories: [cronicas]
+categories: [cronicas, Jornal Cidade de Piracicaba]
 ---
 
 published at: 2013-03-27 00:30 hs
