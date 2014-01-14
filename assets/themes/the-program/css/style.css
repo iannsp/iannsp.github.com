@@ -884,7 +884,7 @@ pre {
   border: 0;
 }
 .the-footer ul {
-  list-style: square;
+  list-style: none;
   padding-left: 1em;
 }
 .the-footer address {

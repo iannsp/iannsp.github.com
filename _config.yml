@@ -4,6 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 source:    false
 server:    true
 server_port: 8081
+save: true
 
 source: .
 destination: ./_site
