@@ -1,12 +1,11 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
-source:    false
+
 server:    true
 server_port: 8081
 save: true
 
-source: .
 destination: ./_site
 plugins:     ./_plugins
 future: true
