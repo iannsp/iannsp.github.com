@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Como eu precisei ver testes</title>
+	<meta name="author" content="Ivo Nascimento">
+	<link href='/assets/themes/the-program/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="Como eu precisei ver testes" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+					<ul>
+						<li class="logo"><a href="/">small pieces of small things</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					<p>Alguns fatos: Eu invisto(alguns dizem que eu perco) tempo compreendendo alguma coisa pela qual surja interesse(<span class="caps">FATO</span> 1).</p>
+<p>Outro fato é que a algum tempo venho refletindo sobre testes e também, aliás, especialmente, sobre Test Driven Development(<span class="caps">TDD</span>)(<span class="caps">FATO</span> 2).</p>
+<p>O ultimo fato, e de menor importancia é que este post é longo.</p>
+<p>Logo, se você reclama de textos longos, não acho que valha a pena dedicar seu tempo a este.</p>
+<p>Vamos ao que interessa:</p>
+<p>Conversando com o Diogo Baeder, Ney Basilio e o Rafael Valeira eu acabei encontrando, juntando uma peça aqui e acolá, uma maneira realistica, não ligada diretamente a software, mas sim a vida, na qual apoiar uma escolha por <span class="caps">TDD</span>.</p>
+Eu perguntava sobre as dificuldades que tenho sobre utilizar testes, tais como racionalizar o por que dos mocks, que criamos e mantemos em paralelo a implementação original para podermos isolar completamente uma teste de suas dependencias ou também a diferença entre usar fixtures em um teste e &#8220;mockar&#8221; quando uma das resposta me levou a lembrar, não sei porque, da seguinte frase:
+<p>&#8220;A gente devia ter duas vidas, uma pra treinar e outra pra viver.&#8221;</p>
+<p>E é dai que cheguei a sintese de como resolvi encarar testes e que pretendo apresentar aqui:</p>
+<p>&#8220;Um software deve ser desenvolvido para sobreviver em um ambiente previamente definido.&#8221;</p>
+<p>Se definirmos o dominio de um problema como um mundo e o software como um ser que deve viver naquele mundo, ele, o software, pode ser colocado pra treinar em um mundo simulado(testes) e ir melhorando, antes de passar a realmente viver(live).</p>
+<p>O mundo real esta lá, com efeitos imprevisíveis. Os usuários (com seu julgamento) estão lá. A latência esta lá. A falha em um serviço esta lá. Num espaço onde os efeitos são reais. E se pudermos, antes de estar lá, praticar como fazemos um treinando ou como o faz um jovem aprendiz ou estudante, tanto melhor. Mas para isso precisamos presupor que um software tem certas caracteristicas.</p>
+<p><b>1a</b> &#8211; Um software, como uma criança, pode, apesar de seus pais o acharem perfeitos, sofrer com o ambiente em que vive e cresce e ser influenciado pelas companhias. Crescer na companhia de bons softwares/hardwares é muito saudável e o contrário pode fazer com que se pareça errar <em>por sua própria natureza</em>, mas na realidade é só um &#8220;bubbles&#8221; de coisas que acontecem no ambiente.</p>
+<p>Podemos definir uma lei baseada no cliche que é &#8220;<b>dize-me com quem andas e te direi quem és</b>&#8221;.</p>
+<p><b>2a -</b> é que um software aprende sempre, mesmo que não tenha sido escrito para isso.</p>
+<p>Uma regra escrita hoje se prova obsoleta amanhã por que agora existe um dado que permite mais acurácia. O programador vai alterar aquela regra e, por reflexo, podemos ver num sistema de versionamento de arquivos, toda a evolução em termos <del>psicológicos </del>algoritmicos e <del>físicos</del> quantidade de codigo(linhas apagadas, acrescidas e alteradas) e todo o ganho de novas capacidades e aperfeiçoamento das habilidades já existentes.</p>
+<p>Podemos definir essa como uma segunda lei, e utilizar aqui a frase <b>&#8220;interação e tempo geram conhecimento&#8221;</b>.</p>
+<p>Precisamos presupor essas duas caracteristicas para entender que o melhor lugar para um software aprender a lidar com &#8220;as coisas da vida&#8221;_ é o mesmo melhor lugar de quem esta em processo de aprendizado_. Esse lugar é um <em>ambiente controlado</em>, <em>sem as penalidades reais</em>, onde as situações que precisam ser aprendidas possam <em>ser reproduzidas e seus resultadados analisadas</em>, para que <em>se saiba o que deve ser aperfeiçoado</em>.</p>
+<p>Esse lugar tem nome, ele é chamado de &#8220;ambiente de testes&#8221;. O equivalente para um software do que é a escola para os humanos.</p>
+<p>Construir um lugar assim e utiliza-lo, tem um custo, assim como construir um mundo qualquer <a href="http://pt.wikipedia.org/wiki/A_Pergunta_Fundamental">(consultar os ratos sobre isso)</a>, mas é um custo infinitamente menor que o custo de &#8220;errar na realidade&#8221;, alias, se pegarmos o espírito dos seriados de sucesso atual, essa diferença pode ser explicada como a diferença de emoção em passar walking dead inteiro atirando em alvos de feno imóveis, ou atirar diretamente em zumbis.</p>
+<p>Criar um <del>mundo</del> ambiente de testes para que os<del> seres vivos</del> softwares possam <del>praticar</del> ser testados é a melhor maneira de garantir que tenham <del>uma vida</del> um deploy no live seguro e tranquilo sem que seu criador seja apedrejado por heresia. A conclusão disso foi que ao escrever testes, o ato de_ escreve-los antes é primordial para o relacionamento programador/teste ser positivo_(e não simplemente <em>boring</em>) e que ao escrever um teste você esta poupando uma vida(uma peça de sofware deixa de morrer).</p>
+<p>Existe uma diferença tênue entre escrever um teste para uma peça de software e escrever uma peça de software atraves de um teste.</p>
+<p>Se softwarelogia existisse, e essa tivesse uma missão como a da antropologia, mas voltada a software, teriamos: No primeiro caso, você esta lidando com um ser pronto, cuja única parte visivel é a externa(interface) e cujo conteudo, se voce quiser conhecer, terá de dissecar(uma tarefa complexa, e o ser pode morrer no processo).</p>
+<p>No segundo, não existe ser, mas você esta dizendo que, para que ele exista, deve atender a certas regras(como um peixe, que obedece a regra de viver grande parte do tempo em meio aquático) e você não precisara disseca-lo para saber que ele cumpre essa regra, afinal, de inexistente, você, o criador, o  fará existente e fato, ele só conseguira existir se atender os requisitos do mundo que você projetou para valida-lo(fatalista não?!).</p>
+<p>Outra coisa muito importante é: <em>Ninguem consegue escrever um teste para uma peça de software que escreveu sem cair na armadilha de concluir que não vai conseguir escrever um teste para um problema que não tenha pensando e tratado no código por que se não conseguiu imaginar o problema na implementação, também não vai imagina-lo no teste.</em></p>
+<p>Para quem curte quadrinhos, e leu <a href="http://pt.wikipedia.org/wiki/A_Morte_do_Superman">A morte do super- man</a> a diferença do que foi definido acima é algo como se o Bertron tivesse criado o <a href="http://pt.wikipedia.org/wiki/Apocalipse_%28DC_Comics%29">Apocalipse</a> em laboratório, de acordo com o que imagina ser o certo, e colocasse ele pra matar o super-homem(provavelmente o Apocalipse iria morrer) e criar o mesmo Apocalipse fazendo ele sobreviver ao mesmo ambiente que o Super-Homem.</p>
+<p>Praticamente, nesse segundo caso, além do benefício de evolução incremental e positiva, ele ainda ganhou um parametro com o profiling todo publicado contra o qual comparar a sua criação(a saber, o próprio super-homem). O ambiente de testes, fica assim caracterizado como a peça mais importante dentro do processo de desenvolvimento de software, como é a escola dentro da formação de um ser-humano. É nele que um software vai ser confrontado com situações reais, com penalidades controladas, como um aluno que faz uma prova de aritmética e erra o troco de uma compra de 10 reais onde deu uma nota de 100. Ele pode dizer na escola que o troco é de nove reais e, mesmo assim, não perder dinheiro, mas na vida real, ele teria um prejuízo de?!(responda ai) <em>Assim como na escola, o mundo de teste apresenta um  novo desafio a medida que julga que o software esta preparado para ele.</em></p>
+<p>Você não cria todos os testes que caracterizam o &#8220;mundo de provas&#8221; de uma vez. Faz isso de maneira incremental, na medida em que vai assistindo a peça de software ir vencendo os desafios anteriores. Esse processo incremental permite que se saiba o que errou, onde errou e o que melhorar. Assim como uma prova baseada em um bimestre de aulas e não em um ano inteiro.</p>
+<p>Corrigir os erros de um bimestre é um processo bem menos doloroso do que corrigir os de um ano. Assim como corrigir um algoritmo de 7 linhas é mais compreensivel do que corrigir um software de 100 linhas.</p>
+Foi assim que tive que pensar em testes para me sentir a vontade enquanto os uso.
+<p>Recapitulando:</p>
+<p>1 &#8211; Dize-me com quem andas e te direi quem és. <em>Um software deve ser testado isoladamente para que seu comportamento não seja influenciado pelos erros dos outros.</em></p>
+<p>2 &#8211; interação e tempo geram conhecimento. <em>O processo de teste deve ser incremental e seguir uma linha de tempo pré-estabelecida. Isso adiciona conhecimento e permite sua recuperação, não importa se seu software utilize algorítmos mutáveis ou não. O conhecimento se acumula no servidor de controle de versão de código que você esta utilizando.</em></p>
+<p>3 &#8211; Ambiente de teste deve ser levado tão a sério para o software quanto o é a escola para a educação de seres humanos. <em>O processo de teste de um software permite uma co-relação com o processo de aprendizado de uma criança.</em></p>
+<p>4 &#8211; Crie o ambiente de teste antes do software a ser testado. <em>Ninguem que projeta um software deixa de analisar questões que estejam ao seu alcance(falo de pessoas justas). Isso torna impossível num momento não ver um defeito e no outro vê-lo. Na realidade, quando você passa a ver um erro depois do software criado é por que esta sendo penalizado por ele com o custo mais caro possível, em produção. Assim como uma criança que deixa a escola e não é mais criança é penalizada pela vida quando percebe que não aprendeu algo quando devia te-lo feito.</em></p>
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+				    <img src="https://secure.gravatar.com/avatar/13b4f1707d6bee31313db212c2ec9ca0?s=120" title="gravatar"  />
+				<div class="misc vcard">
+					<ul style='list-style-type:none !important;'>
+					<li>
+						<iframe src="http://githubbadge.appspot.com/iannsp" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+					</li>
+					<li>
+						<a href="http://br.linkedin.com/in/ivonascimento">
+      					  <img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Ivo Nascimento's profile on LinkedIn"></a>
+  					</li>
+  				  <li>
+	  				<a href="https://twitter.com/ivonascimento" class="twitter-follow-button" data-show-count="false">Follow @ivonascimento</a>
+	  			  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  				</li>
+						<li class="contact"><address><span class="author fn n">Ivo Nascimento</span>::[<span class="fn email">iannsp at gmail.com</span>]</address></li>
+						<li class="lastfm"><a href="http://last.fm/user/iannsp">last.fm</a></li>
+						<li class="facebook"><a href="http://facebook.com/ivonascimento">facebook</a></li>
+						<li class="lattes"><a href="http://lattes.cnpq.br/5469887674261937">lattes</a></li>
+						<li class="about.me"><a href="http://about.me/ivonascimento">about.me</a></li>
+						<li class="tumblr"><a href="http://folhaamarela.tumblr.com">thumblr</a></li>
+					</ul>
+				</div><!-- misc -->
+					<br/>
+
+				<p class="licence">
+					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/unit%20tests/2012/07/17/como-eu-precisei-ver-testes/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+  
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3311700-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
+

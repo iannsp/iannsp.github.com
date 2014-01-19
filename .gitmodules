@@ -1,0 +1,6 @@
+[submodule "theme-the-minimum"]
+	path = theme-the-minimum
+	url = https://github.com/jekyllbootstrap/theme-the-minimum.git
+[submodule "theme-the-program"]
+	path = theme-the-program
+	url = https://github.com/jekyllbootstrap/theme-the-program.git
