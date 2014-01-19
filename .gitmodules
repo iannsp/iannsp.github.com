@@ -4,3 +4,6 @@
 [submodule "theme-the-program"]
 	path = theme-the-program
 	url = https://github.com/jekyllbootstrap/theme-the-program.git
+[submodule "theme-mark-reid"]
+	path = theme-mark-reid
+	url = https://github.com/jekyllbootstrap/theme-mark-reid.git
