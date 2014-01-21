@@ -1,7 +1,0 @@
-
---- 
-layout: default 
-title: A Model to Analize Technical and Business Stress 
-categories: [paper, technology, dev, business] 
----   
-

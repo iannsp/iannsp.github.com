@@ -1,9 +1,0 @@
-Sera que?
-=========
-Published: 2011-05-01 13:14:55
-
-http://www.slideshare.net/ivonascimento/sera-que **Ficha Técnica** **Evento:**
-PHP Conference Brasil 2011 **Data:** 4/12/2011 **Assunto:** Uma reflexão sobre
-PHP e o uso do seu ambiente e suas possibilidades, sobre a vida nas
-comunidades de tecnologia e as possibilidades de futuro.
-
